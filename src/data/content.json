@@ -1,0 +1,251 @@
+{
+  "company": {
+    "name": "BitGrow Solution",
+    "tagline": "Grow ideas into reliable software.",
+    "email": "hello@bitgrow.id",
+    "phone": "+62-xxx-xxxx-xxxx",
+    "address": "Jakarta, Indonesia",
+    "social": {
+      "linkedin": "https://linkedin.com/company/bitgrow-solution",
+      "twitter": "https://twitter.com/bitgrow",
+      "github": "https://github.com/bitgrow"
+    }
+  },
+  "services": [
+    {
+      "slug": "mobile-apps",
+      "title": "Mobile Apps",
+      "icon": "Smartphone",
+      "desc": "iOS/Android with React Native or native pipelines",
+      "details": "Build native mobile experiences that users love. From MVP to enterprise scale.",
+      "deliverables": ["Native iOS/Android apps", "Cross-platform solutions", "App Store deployment", "Push notifications"],
+      "pricing": "Fixed or T&M",
+      "timeline": "8-16 weeks"
+    },
+    {
+      "slug": "websites",
+      "title": "Websites",
+      "icon": "Globe",
+      "desc": "Fast, SEO-friendly websites and portals",
+      "details": "Modern web applications built for performance, accessibility, and conversions.",
+      "deliverables": ["Responsive design", "SEO optimization", "CMS integration", "Analytics setup"],
+      "pricing": "Fixed",
+      "timeline": "4-12 weeks"
+    },
+    {
+      "slug": "custom-software",
+      "title": "Custom Software",
+      "icon": "Code",
+      "desc": "Line-of-business apps, integrations, APIs",
+      "details": "Tailored software solutions that fit your exact business needs and workflows.",
+      "deliverables": ["Custom web applications", "API development", "Third-party integrations", "Admin dashboards"],
+      "pricing": "T&M or Fixed",
+      "timeline": "12-24 weeks"
+    },
+    {
+      "slug": "maintenance-hosting",
+      "title": "Maintenance & Hosting",
+      "icon": "Server",
+      "desc": "SLA, monitoring, backups, updates",
+      "details": "Keep your applications running smoothly with proactive monitoring and support.",
+      "deliverables": ["24/7 monitoring", "Security updates", "Performance optimization", "Backup & recovery"],
+      "pricing": "Retainer",
+      "timeline": "Ongoing"
+    },
+    {
+      "slug": "design",
+      "title": "Design (UI/UX)",
+      "icon": "Palette",
+      "desc": "Research, wireframes, prototypes, design systems",
+      "details": "User-centered design that combines aesthetics with functionality.",
+      "deliverables": ["User research", "Wireframes & prototypes", "Design systems", "Brand identity"],
+      "pricing": "Fixed",
+      "timeline": "4-8 weeks"
+    },
+    {
+      "slug": "ai-services",
+      "title": "AI & AI Business Services",
+      "icon": "Brain",
+      "desc": "Chatbots, automations, analytics, RAG",
+      "details": "Leverage AI to automate workflows, enhance customer experience, and gain insights.",
+      "deliverables": ["AI chatbots", "Predictive analytics", "Document processing", "Workflow automation"],
+      "pricing": "T&M or Fixed",
+      "timeline": "8-16 weeks"
+    }
+  ],
+  "consulting": [
+    {
+      "title": "Architecture Review",
+      "icon": "Building",
+      "desc": "Cloud, scalability, security",
+      "details": "Expert assessment of your technical infrastructure and recommendations for improvement."
+    },
+    {
+      "title": "Roadmapping",
+      "icon": "Map",
+      "desc": "MVP → v1 → scale",
+      "details": "Strategic planning to take your product from concept to market leader."
+    },
+    {
+      "title": "Technical Audit",
+      "icon": "Search",
+      "desc": "Code, performance, cost",
+      "details": "Comprehensive analysis of code quality, system performance, and infrastructure costs."
+    }
+  ],
+  "industries": [
+    {
+      "slug": "umkm",
+      "title": "UMKM (SMEs)",
+      "icon": "Store",
+      "desc": "Affordable, scalable solutions for small and medium businesses",
+      "painPoints": ["Limited budget", "Need quick ROI", "Simple, effective tools"],
+      "solutions": ["Starter packages", "Incremental delivery", "Cloud-based solutions"],
+      "example": "E-commerce platform helping local business grow 300% in first year"
+    },
+    {
+      "slug": "startup",
+      "title": "Startups",
+      "icon": "Rocket",
+      "desc": "Move fast with MVPs that validate and scale",
+      "painPoints": ["Time to market", "Investor-ready product", "Technical debt"],
+      "solutions": ["Rapid prototyping", "Scalable architecture", "Investor demos"],
+      "example": "Fintech MVP launched in 6 weeks, raised seed round"
+    },
+    {
+      "slug": "enterprise",
+      "title": "Companies",
+      "icon": "Building2",
+      "desc": "Enterprise-grade software with reliability and security",
+      "painPoints": ["Legacy systems", "Integration complexity", "Compliance requirements"],
+      "solutions": ["Modernization strategy", "Enterprise integrations", "Security-first approach"],
+      "example": "Legacy system migration completed with zero downtime"
+    },
+    {
+      "slug": "gov-ed",
+      "title": "Government & Education",
+      "icon": "GraduationCap",
+      "desc": "Accessible, compliant solutions for public sector",
+      "painPoints": ["Accessibility standards", "Budget constraints", "Long procurement cycles"],
+      "solutions": ["WCAG compliance", "Phased delivery", "Public sector experience"],
+      "example": "Learning management system serving 10,000+ students"
+    },
+    {
+      "slug": "personal",
+      "title": "Personal Projects",
+      "icon": "User",
+      "desc": "Turn your idea into reality with expert guidance",
+      "painPoints": ["First-time founders", "Technical knowledge gap", "Budget uncertainty"],
+      "solutions": ["Founder-friendly approach", "Educational support", "Flexible engagement"],
+      "example": "Solo founder's app idea launched and featured in app stores"
+    }
+  ],
+  "work": [
+    {
+      "slug": "kci-website",
+      "title": "Komunitas Chinese Indonesia (KCI) Website",
+      "tags": ["Web", "Design"],
+      "industry": "UMKM",
+      "summary": "Community platform connecting Indonesian-Chinese community members",
+      "description": "A modern community website for Komunitas Chinese Indonesia (KCI), featuring a distinctive burgundy and gold color scheme that reflects cultural heritage. The platform serves as a central hub for the Indonesian-Chinese community with bilingual content (Indonesian and Chinese). Built with React and Next.js for optimal performance, the website includes a comprehensive Visi & Misi section outlining the organization's goals, event management features for community gatherings, member directories, and a content management system for cultural articles and announcements. The design incorporates traditional elements like cloud patterns and gradient overlays while maintaining modern web standards and responsive layouts for all devices.",
+      "websiteUrl": "https://komunitaschineseindonesia.com",
+      "tech": ["React", "Next.js", "Tailwind CSS", "PostgreSQL"],
+      "images": ["/assets/work/kci-1.png", "/assets/work/kci-2.png", "/assets/work/kci-3.png"]
+    },
+    {
+      "slug": "crypto-path",
+      "title": "Crypto Path - Cryptocurrency Learning Platform",
+      "tags": ["Web", "Design", "AI"],
+      "industry": "Education",
+      "summary": "Educational platform for cryptocurrency and blockchain learning in Indonesian",
+      "description": "Crypto Path is an educational platform designed to make cryptocurrency and blockchain technology accessible to Indonesian learners. The platform features a modern dark theme with gold accents, creating an engaging and professional learning environment. With the tagline 'Belajar Crypto Secara Praktikal dan Terbuka' (Learn Crypto Practically and Openly), the platform offers structured courses, interactive learning modules, and gamification elements to enhance student engagement. Built with React, Next.js, and TypeScript for a robust and type-safe codebase, the platform includes progress tracking, community features for peer learning, practical exercises, and AI-powered recommendations. The responsive design ensures seamless access across all devices, while the Indonesian language interface makes complex crypto concepts more approachable for local audiences.",
+      "websiteUrl": "https://crypto-path-frontend.vercel.app/",
+      "tech": ["React", "Next.js", "TypeScript", "Tailwind CSS", "Vercel"],
+      "images": ["/assets/work/crypto-path-1.png", "/assets/work/crypto-path-2.png", "/assets/work/crypto-path-3.png"]
+    }
+  ],
+  "process": [
+    {
+      "step": 1,
+      "title": "Discover",
+      "desc": "We dive deep into your goals, users, and constraints to define success.",
+      "icon": "Lightbulb"
+    },
+    {
+      "step": 2,
+      "title": "Design",
+      "desc": "Wireframes, prototypes, and design systems that users love.",
+      "icon": "Palette"
+    },
+    {
+      "step": 3,
+      "title": "Build",
+      "desc": "Iterative development with weekly demos and transparent progress.",
+      "icon": "Code"
+    },
+    {
+      "step": 4,
+      "title": "Grow",
+      "desc": "Launch, monitor, optimize, and scale with ongoing support.",
+      "icon": "TrendingUp"
+    }
+  ],
+  "testimonials": [
+    {
+      "name": "Sarah Chen",
+      "role": "Founder, TechStart Indonesia",
+      "company": "TechStart",
+      "content": "BitGrow delivered our MVP in 6 weeks and helped us secure seed funding. Their technical expertise and founder-friendly approach made all the difference.",
+      "avatar": "/assets/testimonials/sarah.jpg",
+      "rating": 5
+    },
+    {
+      "name": "Ahmad Hidayat",
+      "role": "Owner, Warung Digital",
+      "company": "Warung Digital",
+      "content": "As a small business owner, I was worried about the cost and complexity. BitGrow made it simple and affordable. Our online sales have tripled!",
+      "avatar": "/assets/testimonials/ahmad.jpg",
+      "rating": 5
+    },
+    {
+      "name": "Lisa Tanaka",
+      "role": "CTO, FinanceHub",
+      "company": "FinanceHub",
+      "content": "The team migrated our legacy system with zero downtime. Impressive planning, execution, and communication throughout the entire project.",
+      "avatar": "/assets/testimonials/lisa.jpg",
+      "rating": 5
+    }
+  ],
+  "valueProps": [
+    {
+      "title": "Outcome-Driven Delivery",
+      "desc": "We measure success by your business results, not just shipped features.",
+      "icon": "Target"
+    },
+    {
+      "title": "Transparent Pricing",
+      "desc": "No hidden costs. Clear estimates, regular updates, and flexible engagement models.",
+      "icon": "DollarSign"
+    },
+    {
+      "title": "Modern, Secure Stack",
+      "desc": "Production-grade tools and best practices from day one. Security is never an afterthought.",
+      "icon": "Shield"
+    },
+    {
+      "title": "Post-Launch Care",
+      "desc": "We don't disappear after launch. Ongoing support, monitoring, and optimization.",
+      "icon": "Heart"
+    },
+    {
+      "title": "Fast Time to Market",
+      "desc": "Rapid prototyping and iterative delivery get you to market faster.",
+      "icon": "Zap"
+    },
+    {
+      "title": "Scalable Architecture",
+      "desc": "Built to grow with you, from MVP to millions of users.",
+      "icon": "TrendingUp"
+    }
+  ]
+}
