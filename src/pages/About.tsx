@@ -39,7 +39,7 @@ export default function About() {
   return (
     <Layout>
       <Hero
-        title="About BitGrow Solution"
+        title="About BitGrow Solutions"
         description="We're a team of engineers, designers, and problem-solvers who believe great software starts with understanding your business."
         primaryCta={{ text: 'Work With Us', href: '/contact' }}
       />
@@ -58,7 +58,7 @@ export default function About() {
                 do things differently.
               </p>
               <p className="text-lg text-muted-foreground leading-relaxed mt-4">
-                BitGrow Solution combines deep technical expertise with a founder-friendly approach.
+                BitGrow Solutions combines deep technical expertise with a founder-friendly approach.
                 Whether you're validating an MVP or scaling to millions of users, we're your
                 technical partner for the long haul.
               </p>

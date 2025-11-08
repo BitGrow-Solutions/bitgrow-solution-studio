@@ -12,9 +12,11 @@ export function Footer() {
           {/* Brand */}
           <div className="lg:col-span-4">
             <Link to="/" className="inline-block mb-6 group">
-              <div className="font-bold text-2xl tracking-tight transition-colors group-hover:text-primary">
-                BitGrow
-              </div>
+              <img
+                src="/assets/logo/bitgrow-logo.svg"
+                alt="BitGrow Solutions"
+                className="h-12 w-auto transition-opacity group-hover:opacity-80"
+              />
             </Link>
             <p className="text-[15px] text-muted-foreground mb-8 max-w-sm">
               {company.tagline}

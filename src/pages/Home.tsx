@@ -24,7 +24,7 @@ export default function Home() {
       {/* Hero Section */}
       <Hero
         title="Ship reliable software, faster."
-        description="BitGrow Solution builds and maintains apps that scale—from MVP to enterprise."
+        description="BitGrow Solutions builds and maintains apps that scale—from MVP to enterprise."
         primaryCta={{ text: 'Get a Quote', href: '/contact' }}
         secondaryCta={{ text: 'See Our Work', href: '/work' }}
       >

@@ -21,9 +21,11 @@ export function Header() {
       <nav className="container-custom flex h-20 items-center justify-between">
         {/* Logo */}
         <Link to="/" className="flex items-center gap-2 group">
-          <div className="font-bold text-xl tracking-tight transition-colors group-hover:text-primary">
-            BitGrow
-          </div>
+          <img
+            src="/assets/logo/bitgrow-logo.svg"
+            alt="BitGrow Solutions"
+            className="h-10 w-auto transition-opacity group-hover:opacity-80"
+          />
         </Link>
 
         {/* Desktop Navigation */}

@@ -1,8 +1,8 @@
-# BitGrow Solution Website
+# BitGrow Solutions Website
 
 ## About
 
-A modern, responsive website for BitGrow Solution - a software development company that grows ideas into reliable software. Built with React, TypeScript, and Tailwind CSS.
+A modern, responsive website for BitGrow Solutions - a software development company that grows ideas into reliable software. Built with React, TypeScript, and Tailwind CSS.
 
 ## Getting Started
 
@@ -96,4 +96,4 @@ This project is ready to deploy to:
 
 ## License
 
-© BitGrow Solution. All rights reserved.
+© BitGrow Solutions. All rights reserved.
