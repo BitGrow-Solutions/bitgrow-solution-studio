@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import { createPortal } from 'react-dom';
 import { cn } from '@/lib/utils';
 import { Button } from '@/components/ui/button';
 import { Badge } from '@/components/ui/badge';
@@ -109,41 +110,54 @@ export function InteractivePrototype({
       )}
 
       {/* Prototype viewer */}
-      <div
-        className={cn(
-          "relative overflow-auto rounded-lg bg-muted/30 flex items-center justify-center transition-all",
-          isFullscreen ? "fixed inset-4 z-[100] bg-background shadow-2xl" : "p-8"
-        )}
-      >
-        <div
-          style={{
-            transform: `scale(${zoom})`,
-            transformOrigin: 'center',
-            transition: 'transform 0.2s ease-in-out'
-          }}
-        >
-          {children}
-        </div>
-
-        {/* Close button for fullscreen */}
-        {isFullscreen && (
-          <Button
-            variant="outline"
-            size="icon"
-            onClick={toggleFullscreen}
-            className="absolute top-4 right-4 z-[101]"
-            title="Exit fullscreen"
+      {!isFullscreen ? (
+        <div className="relative overflow-auto rounded-lg bg-muted/30 flex items-center justify-center p-8">
+          <div
+            style={{
+              transform: `scale(${zoom})`,
+              transformOrigin: 'center',
+              transition: 'transform 0.2s ease-in-out'
+            }}
           >
-            <Minimize2 className="w-4 h-4" />
-          </Button>
-        )}
-      </div>
-
-      {isFullscreen && (
-        <div
-          className="fixed inset-0 bg-background/80 backdrop-blur-sm z-[99]"
-          onClick={toggleFullscreen}
-        />
+            {children}
+          </div>
+        </div>
+      ) : (
+createPortal(
+          <>
+            {/* Backdrop - pointer-events-none except on itself */}
+            <div
+              className="fixed inset-0 z-[9998]"
+              onClick={toggleFullscreen}
+            >
+              <div className="absolute inset-0 bg-background/80 backdrop-blur-sm pointer-events-none" />
+            </div>
+            {/* Fullscreen viewer */}
+            <div className="fixed inset-4 z-[9999] bg-background shadow-2xl rounded-lg overflow-auto flex items-center justify-center pointer-events-auto">
+              <div
+                style={{
+                  transform: `scale(${zoom})`,
+                  transformOrigin: 'center',
+                  transition: 'transform 0.2s ease-in-out'
+                }}
+                className="pointer-events-auto"
+              >
+                {children}
+              </div>
+              {/* Close button for fullscreen */}
+              <Button
+                variant="outline"
+                size="icon"
+                onClick={toggleFullscreen}
+                className="absolute top-4 right-4 z-10"
+                title="Exit fullscreen"
+              >
+                <Minimize2 className="w-4 h-4" />
+              </Button>
+            </div>
+          </>,
+          document.body
+        )
       )}
     </div>
   );
