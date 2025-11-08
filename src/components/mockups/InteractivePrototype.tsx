@@ -112,7 +112,7 @@ export function InteractivePrototype({
       <div
         className={cn(
           "relative overflow-auto rounded-lg bg-muted/30 flex items-center justify-center transition-all",
-          isFullscreen ? "fixed inset-4 z-50 bg-background" : "p-8"
+          isFullscreen ? "fixed inset-4 z-[100] bg-background shadow-2xl" : "p-8"
         )}
       >
         <div
@@ -124,11 +124,24 @@ export function InteractivePrototype({
         >
           {children}
         </div>
+
+        {/* Close button for fullscreen */}
+        {isFullscreen && (
+          <Button
+            variant="outline"
+            size="icon"
+            onClick={toggleFullscreen}
+            className="absolute top-4 right-4 z-[101]"
+            title="Exit fullscreen"
+          >
+            <Minimize2 className="w-4 h-4" />
+          </Button>
+        )}
       </div>
 
       {isFullscreen && (
         <div
-          className="fixed inset-0 bg-background/80 backdrop-blur-sm z-40"
+          className="fixed inset-0 bg-background/80 backdrop-blur-sm z-[99]"
           onClick={toggleFullscreen}
         />
       )}
